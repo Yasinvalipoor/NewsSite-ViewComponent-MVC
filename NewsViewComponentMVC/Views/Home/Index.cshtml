@@ -1,0 +1,14 @@
+﻿@model NewsViewComponentMVC.Component.POCOViewComponent
+
+<h1>This Text from Home Page With Controller</h1>
+
+@* Two ways to implement view components *@
+
+@* 1 *@
+@await Component.InvokeAsync("POCO");
+
+<hr />
+
+@* 2 *@
+<vc:poco></vc:poco>
+
